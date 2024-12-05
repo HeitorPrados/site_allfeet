@@ -153,17 +153,35 @@ body {
 }
 
 .product-item .actions button {
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
+    background: transparent;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.product-item .actions button.delete {
-  background: #dc3545;
+.product-item .actions button:hover {
+  background-color: #0000001a;
 }
+
+
+.product-item .actions button.delete {
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.product-item .actions button.delete:hover {
+  background-color: #0000001a;
+}
+
 
 .hidden {
   display: none;
@@ -278,4 +296,7 @@ footer {
   align-items: center; 
 }
 
+.product-item img {
+  border-radius: 3%;
+}
 
