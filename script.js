@@ -75,9 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
         productGrid.appendChild(productItem);
 
         productItem.querySelector('.delete').addEventListener('click', () => {
-            productGrid.removeChild(productItem);
-            saveProductsToStorage();
+            const confirmation = confirm('Tem certeza de que deseja excluir este produto?');
+            if (confirmation) {
+                productGrid.removeChild(productItem);
+                saveProductsToStorage();
+            }
         });
+        
 
         productItem.querySelector('.edit').addEventListener('click', () => {
             const productData = {
