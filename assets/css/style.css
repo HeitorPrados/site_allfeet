@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.header1 {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 0;
+}
+
+.header1 .wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 45px;
+}
+
+.header1 .menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+
+.header2 {
+  background-color: #ffffff00;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 0;
+}
+
+.header2 .wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 45px;
+}
+
+.header2 .menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url(../img/sapato.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.espaco-branco{
+  padding: 4.5em;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.section2{
+  height: 100vh;
+}
+
+/* LOGO */
+.logotipo {
+  width: 62px;
+}
+
+/* BARRA DE PESQUISA */
+.group {
+  padding-left: 120px;
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 300px;
+}
+
+.input-importante {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f5f5f5;
+  color: #0d0c22;
+  transition: .3s ease;
+}
+
+.input-importante::placeholder {
+  color: #000000;
+}
+
+.input-importante:focus, input:hover {
+  outline: none;
+  border-color:  #d2d2d2;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+      padding-left: 120px;
+      position: absolute;
+      left: 1rem;
+      fill: #000000;
+      width: 1rem;
+      height: 2.5rem;
+}
+
+/* Centralizar a área de produtos e organizar 3 em 3 */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 10px;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+
+.product-item .actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.product-item .actions button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-item .actions button.delete {
+  background: #dc3545;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Modal estilos */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  color: #000000;
+  text-align: center;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-content form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #000000;
+}
+
+.modal-content form input,
+.modal-content form textarea,
+.modal-content form button {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.modal-content form button {
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-content form button:hover {
+  background: #f0f0f0;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  background-color: black; 
+  color: white; 
+  padding: 20px; 
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#addProductButton {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#addProductButton:hover {
+  background: #f0f0f0;
+  color: #000000;
+}
+
+
+
