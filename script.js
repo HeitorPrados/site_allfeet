@@ -172,3 +172,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Adicionar evento ao input de busca
     searchInput.addEventListener('input', filterProducts);
 });
+
+document.getElementById("btnBanner").addEventListener("click", function () {
+    const targetSection = document.getElementById("productSection");
+    
+    targetSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});
